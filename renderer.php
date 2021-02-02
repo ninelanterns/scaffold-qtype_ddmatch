@@ -52,6 +52,7 @@ class qtype_ddmatch_renderer extends qtype_with_combined_feedback_renderer {
                 'M.qtype.ddmatch.init_dragdrop', array(array(
                     'questionid' => $qa->get_slot(),
                     'readonly' => $options->readonly,
+                    'containerid' => $qa->get_outer_question_div_unique_id(),
                 ))
         );
 
